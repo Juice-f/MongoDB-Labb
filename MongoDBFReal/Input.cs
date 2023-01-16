@@ -28,13 +28,14 @@ namespace MongoDBFReal
                 }
                 catch
                 {
-                    Console.WriteLine($"Enter a number between {0} and {choices.Length-1}");
+                    Console.WriteLine($"Enter a number between {0} and {choices.Length - 1}");
                 }
                 if (choice < choices.Length && choice > 0)
                 {
                     choiceMade = true;
                 }
-                Console.WriteLine($"Enter a number between {0} and {choices.Length-1}");
+                else
+                    Console.WriteLine($"Enter a number between {0} and {choices.Length - 1}");
 
             }
             return -1;
